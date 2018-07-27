@@ -1,0 +1,36 @@
+.content {
+	display: flex;
+	width: 1232px;
+	margin: 0 auto 78px auto;
+	padding-top: 116px;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	margin-right: 32px;
+}
+
+.column.large {
+	width: 630px;
+}
+
+.lead-story .image-content {
+	background-image: url('../img/img-story-main.png');
+	width: 630px;
+	margin-top: 0;
+	font-size: 40px;
+	text-align: left;
+}
+
+.lead-story .image-content span {
+	margin-left: 20px;
+}
+
+.fall-cancelled.image-content {
+	background-image: url('../img/img-story-2.png');
+}
+
+.pop-culture.image-content {
+	background-image: url('../img/img-story-3.png');
+}
