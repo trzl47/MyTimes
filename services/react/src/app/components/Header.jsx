@@ -12,10 +12,10 @@ const Header = () => {
 				<figcaption>My Times</figcaption>
 			</figure>
 			<nav>
-				<span><a href='/#'>World</a></span>
-				<span><a href='/#'>U.S.</a></span>
-				<span><a href='/#'>Tech</a></span>
-				<span><a href='/#'>Science</a></span>
+				<a href='/#'>World</a>
+				<a href='/#'>U.S.</a>
+				<a href='/#'>Tech</a>
+				<a href='/#'>Science</a>
 			</nav>
 		</header>
 	);

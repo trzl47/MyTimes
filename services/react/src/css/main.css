@@ -1,36 +1,47 @@
-.content {
-	display: flex;
-	width: 1232px;
-	margin: 0 auto 78px auto;
-	padding-top: 116px;
+.main {
+	grid-area: main;
+	padding-top: 5rem;
+	padding-bottom: 2rem;
+}
+@media only screen and (min-width: 768px) {
+	.main {
+		display: grid;
+		grid-template-areas:
+			'headline headline'
+			'story2 story4'
+			'story3 story5';
+		grid-gap: 20px;
+		padding-top: 3rem;
+	}
 }
 
-.column {
-	display: flex;
-	flex-direction: column;
-	margin-right: 32px;
+.headline {
+	grid-area: headline;
 }
 
-.column.large {
-	width: 630px;
+.story2 {
+	grid-area: story2;
+}
+.story3 {
+	grid-area: story3;
+}
+.story4 {
+	grid-area: story4;
+}
+.story5 {
+	grid-area: story5;
 }
 
-.lead-story .image-content {
-	background-image: url('../img/img-story-main.png');
-	width: 630px;
-	margin-top: 0;
+.headline .story-img {
+	background-image: url('../img/headline.png');
 	font-size: 40px;
 	text-align: left;
 }
 
-.lead-story .image-content span {
-	margin-left: 20px;
+.story3 .story-img {
+	background-image: url('../img/story3.png');
 }
 
-.fall-cancelled.image-content {
-	background-image: url('../img/img-story-2.png');
-}
-
-.pop-culture.image-content {
-	background-image: url('../img/img-story-3.png');
+.story5 .story-img {
+	background-image: url('../img/story5.png');
 }

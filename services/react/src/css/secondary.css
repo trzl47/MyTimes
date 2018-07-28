@@ -1,7 +1,15 @@
-.column.medium {
-	width: 300px;
+.secondary {
+	grid-area: secondary;
+	border-top: 1px solid #66cdaa;
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+}
+@media only screen and (min-width: 768px) {
+	.secondary {
+		padding-top: 3rem;
+	}
 }
 
-.cat-ceo.image-content {
-	background-image: url('../img/img-story-1.png');
+.story7 .story-img {
+	background-image: url('../img/story7.png');
 }

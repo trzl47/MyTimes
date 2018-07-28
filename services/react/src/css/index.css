@@ -1,57 +1,42 @@
 body {
-	margin: 0;
 	font-family: Georgia;
 	font-size: 17px;
-	color: black;
+	color: #000000;
 }
 
-a {
-	color: black;
-}
-
-h2 {
-	margin-top: 0;
-	margin-bottom: 0;
+.title {
 	font-family: Georgia;
 	font-size: 30px;
 	font-weight: bold;
 	font-style: normal;
 }
 
-nav span {
-	display: inline-block;
-	padding: 20px 10px;
-}
-
-.stories {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 17px;
-}
-
-.stories .text-content {
-	height: 250px;
-}
-
 .story {
 	display: flex;
 	flex-direction: column;
-	width: 300px;
+	align-items: flex-start;
+	justify-content: center;
+}
+.story .title:hover {
+	color: #5ac2e4;
 }
 
-.narrative {
-	margin-top: 16px;
-}
-
-.image-content {
+.story-img {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	height: 300px;
-	margin-top: 15px;
 	font-family: Georgia;
 	font-weight: bold;
 	font-size: 30px;
-	color: white;
 	text-align: center;
+	background-size: cover;
+	background-repeat: none;
+}
+.story-img a {
+	color: #ffffff;
+	text-decoration: none;
+}
+.story-img a:hover {
+	color: #5ac2e4;
 }

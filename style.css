@@ -118,7 +118,7 @@ margin-right: 32px;
 width: 630px;
 }
 
-.lead-story .image-content {
+.headline-story .image-content {
 background-image: url(
 https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
 width: 630px;
@@ -127,7 +127,7 @@ font-size: 40px;
 text-align: left;
 }
 
-.lead-story .image-content span {
+.headline-story .image-content span {
 margin-left: 20px;
 }
 
