@@ -1,14 +1,9 @@
 version: '3'
 services:
-  react-nginx:
+  mytimes-nginx:
     image: trzl/portfolio:mytimes-react.1
-    restart: unless-stopped
     container_name: mytimes-nginx
-    networks:
-      - mytimes
-    env_file: .env
-    environment:
-      - NODE_ENV=production
+    restart: unless-stopped
   reverseproxy:
     image: trzl/portfolio:mytimes-proxy.1
     container_name: mytimes-proxy
@@ -17,8 +12,8 @@ services:
       - "80"
       - "443"
     depends_on:
-      - react-nginx
-   environment:
+      - mytimes-nginx
+    environment:
       VIRTUAL_HOST: mytimes.tbrownkcdev.com
       LETSENCRYPT_HOST: mytimes.tbrownkcdev.com
       LETSENCRYPT_EMAIL: brownty47@gmail.com
@@ -26,5 +21,3 @@ networks:
   default:
     external:
       name: webproxy
-  mytimes:
-    driver: bridge
