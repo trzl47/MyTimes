@@ -1,0 +1,42 @@
+body {
+	font-family: Georgia;
+	font-size: 17px;
+	color: #000000;
+}
+
+.title {
+	font-family: Georgia;
+	font-size: 30px;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.story {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+.story .title:hover {
+	color: #5ac2e4;
+}
+
+.story-img {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 300px;
+	font-family: Georgia;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	background-size: cover;
+	background-repeat: none;
+}
+.story-img a {
+	color: #ffffff;
+	text-decoration: none;
+}
+.story-img a:hover {
+	color: #5ac2e4;
+}

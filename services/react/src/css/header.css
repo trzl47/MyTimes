@@ -1,0 +1,55 @@
+.header {
+	grid-area: header;
+	display: grid;
+	grid-template-areas:
+		'logo'
+		'nav';
+	align-items: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	border-bottom: 1px solid #000;
+	background-color: #fff;
+	font-family: Verdana;
+	font-size: 14px;
+	font-weight: bold;
+}
+.header nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	padding: 5px;
+}
+.header nav a {
+	color: #66cdaa;
+	text-decoration: none;
+	padding-right: 2rem;
+}
+@media only screen and (min-width: 768px) {
+	.header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+
+.logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-bottom: 1px solid #66cdaa;
+}
+.logo img {
+	width: 70px;
+	height: 60px;
+}
+.logo figcaption {
+	padding-left: 10px;
+}
+@media only screen and (min-width: 768px) {
+	.logo {
+		border-bottom: none;
+	}
+}

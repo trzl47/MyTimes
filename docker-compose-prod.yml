@@ -1,0 +1,23 @@
+version: '3'
+services:
+  mytimes-nginx:
+    image: trzl/portfolio:mytimes-react.1
+    container_name: mytimes-nginx
+    restart: unless-stopped
+  reverseproxy:
+    image: trzl/portfolio:mytimes-proxy.1
+    container_name: mytimes-proxy
+    restart: unless-stopped
+    expose:
+      - "80"
+      - "443"
+    depends_on:
+      - mytimes-nginx
+    environment:
+      VIRTUAL_HOST: mytimes.tbrownkcdev.com
+      LETSENCRYPT_HOST: mytimes.tbrownkcdev.com
+      LETSENCRYPT_EMAIL: brownty47@gmail.com
+networks:
+  default:
+    external:
+      name: webproxy
